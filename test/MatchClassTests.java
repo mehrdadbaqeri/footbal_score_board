@@ -6,6 +6,9 @@ import java.security.InvalidParameterException;
 
 import static org.junit.Assert.fail;
 
+/**
+ * The test suite for ScoreBoardClass
+ */
 public class MatchClassTests {
     /**
      * Generate random integer test data
@@ -27,10 +30,10 @@ public class MatchClassTests {
         return (long) ((Math.random() * (max - min)) + min);
     }
 
-    @Test
     /**
      * Test checking the expected match instance can be created
      */
+    @Test
     public void test_match_instantiate(){
         long matchId1 = getRandomLong(0, Long.MAX_VALUE);
         String match1HomeTeam = "Match1Home";
@@ -43,10 +46,10 @@ public class MatchClassTests {
         Assert.assertEquals(0, match1.getHomeTeamScore());
     }
 
-    @Test
     /**
      * Test checking multiple match instance can be created
      */
+    @Test
     public void test_match_instantiate_multiple(){
         long matchId1 = getRandomLong(0, Long.MAX_VALUE);
         String match1HomeTeam = "Match1Home";
@@ -79,10 +82,10 @@ public class MatchClassTests {
         Assert.assertEquals(0, match3.getHomeTeamScore());
     }
 
-    @Test
     /**
      * Test checking the update of the match scores
      */
+    @Test
     public void test_match_update_scores(){
         long matchId1 = getRandomLong(0, Long.MAX_VALUE);
         String match1HomeTeam = "Match1Home";
@@ -119,10 +122,10 @@ public class MatchClassTests {
         Assert.assertEquals(match3AwayScore, match3.getAwayTeamScore());
     }
 
-    @Test
     /**
      * Test checking the update of the match scores
      */
+    @Test
     public void test_match_update_scores_invalid_score(){
         long matchId1 = getRandomLong(0, Long.MAX_VALUE);
         String match1HomeTeam = "Match1Home";
