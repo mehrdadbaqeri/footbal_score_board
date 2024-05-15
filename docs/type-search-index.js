@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"Main"},{"p":"sportradar.scoreboard","l":"MatchClass"},{"p":"<Unnamed>","l":"MatchClassTests"},{"p":"sportradar.scoreboard","l":"ScoreBoardClass"},{"p":"<Unnamed>","l":"ScoreBoardClassTests"}];updateSearchResults();
