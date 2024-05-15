@@ -1,5 +1,7 @@
 package sportradar.scoreboard;
 
+import java.security.InvalidParameterException;
+
 /**
  * The match score information object
  */
@@ -30,7 +32,12 @@ public class MatchClass {
      * @param homeTeamScore The score to set for the home team
      */
     public void setHomeTeamScore(int homeTeamScore) {
-        this.homeTeamScore = homeTeamScore;
+        if(homeTeamScore < 0){
+            throw new InvalidParameterException("Match score must be >= 0");
+        }
+        else {
+            this.homeTeamScore = homeTeamScore;
+        }
     }
 
     /**
@@ -46,7 +53,12 @@ public class MatchClass {
      * @param awayTeamScore The score to set for the away team
      */
     public void setAwayTeamScore(int awayTeamScore) {
-        this.awayTeamScore = awayTeamScore;
+        if(awayTeamScore < 0){
+            throw new InvalidParameterException("Match score must be >= 0");
+        }
+        else {
+            this.awayTeamScore = awayTeamScore;
+        }
     }
 
     /**
